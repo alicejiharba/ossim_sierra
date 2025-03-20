@@ -62,6 +62,7 @@ struct pcb_t * get_mlq_proc(void) {
 	pthread_mutex_unlock(&queue_lock);
 	return proc;	
 }
+int n = 0;
 
 void put_mlq_proc(struct pcb_t * proc) {
 	pthread_mutex_lock(&queue_lock);
